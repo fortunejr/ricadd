@@ -1,0 +1,134 @@
+.plane-img {
+    width: 100%;
+}
+.service-head {
+    position: relative;
+    width: 100%;
+}
+.plane-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+@media (max-width: 768px) {
+    .plane-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+}
+.service-3 {
+    background: linear-gradient(to bottom, white 0%, #ebfcfc 20%, #ebfcfc 80%, white 100%);
+}
+.tour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.tour-text {
+    width: 30%;
+}
+.tour img {
+    width: 35%;
+}
+.flight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.flight-text {
+    width: 30%;
+}
+.flight img {
+    width: 35%;
+}
+.first-h3 {
+    display: none;
+}
+
+.visa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.visa-text {
+    width: 30%;
+}
+.visa img {
+    width: 35%;
+}
+@media (max-width: 768px) {
+    .tour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .tour-text {
+        width: 90%;
+    }
+    .tour img {
+        width: 85%;
+    }
+
+    .flight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .flight-text {
+        width: 90%;
+    }
+    .flight img {
+        width: 85%;
+    }
+    .first-h3 {
+        display: block;
+    }
+    .second-h3 {
+        display: none;
+    }
+
+    .visa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .visa-text {
+        width: 90%;
+    }
+    .visa img {
+        width: 85%;
+    }
+}
+ /* icons */
+ 

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* General Styles */
+.Nav {
+    display: flex;
+    justify-content: space-between; /* This will push the logo to the left and the hamburger to the right */
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    margin-top: 20px;
+  }
+.Nav li a {
+    text-decoration: none;
+  }
+  .Nav li {
+    padding: 1rem;
+    font-size: 16px;
+  }
+  
+.inline-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.logo-img {
+    width: 130px;
+    margin-right: 10px;
+  }
+.hamburger-menu {
+    padding: 10px; /* Adjust padding as needed */
+    background-color: red;
+  }
+  .hamburger-menu {
+    padding: 3px;
+    background-color: #00336d; /* Adjust background color as needed */
+    border-radius: 50%; /* Optional: makes the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow to the icon */
+  }
+  .hamburger-menu .hamburger-react {
+    color: white; /* Adjust the icon color to ensure contrast against the background */
+  }
+.hamburger-menu {
+    display: none; /* Hide by default */
+}
+.nav-ul {
+    position: absolute; /* This makes the nav menu overlap the content when open */
+    top: 60px; /* Adjust based on your header height */
+    right: 20px; /* Align the nav menu to the right */
+    background-color: white; /* Adjust background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    padding: 10px 20px;
+  }
+  .nav-ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+.book {
+    margin-left: 150px;
+    background-color: #5358bd;
+    border-radius: 100px;
+    
+}
+.book a {
+    color: white;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.book{
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  .book:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .book:hover {
+    color: #fff;
+  }
+  
+  .book:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .book:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .book:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+
+
+
+  .book2 {
+    background-color: #5358bd;
+    border-radius: 100px;
+    
+}
+.book2 a {
+    color: white;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.book2{
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  .book2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .book2:hover {
+    color: #fff;
+  }
+  
+  .book2:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .book2:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .book2:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+/* Media Queries */
+
+/* Desktop and Tablet (Min-width: 769px) */
+@media (min-width: 769px) {
+    .inline-nav {
+        display: flex; /* Show inline nav */
+    }
+
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu */
+    }
+
+    .nav-ul {
+        display: none; /* Hide mobile dropdown */
+    }
+}
+
+/* Mobile (Max-width: 1062px) */
+@media (max-width: 1111px) {
+    .inline-nav {
+        display: none; /* Hide inline nav on mobile */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-ul {
+        display: block; /* Initially hide dropdown */
+    }
+
+    .nav-ul ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
